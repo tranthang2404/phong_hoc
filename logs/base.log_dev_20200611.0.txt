@@ -1,0 +1,803 @@
+2020-06-11 23:26:36.091  INFO 14948 --- [           main]  org.example.BasewebApplication           : Starting BasewebApplication on Admin with PID 14948 (E:\inteliJ\onthi\target\classes started by Administrator in E:\inteliJ\onthi)
+2020-06-11 23:26:36.094  INFO 14948 --- [           main]  org.example.BasewebApplication           : No active profile set, falling back to default profiles: default
+2020-06-11 23:26:36.770  WARN 14948 --- [kground-preinit]  o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-06-11 23:26:39.390  INFO 14948 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-11 23:26:39.393  INFO 14948 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-11 23:26:39.683  INFO 14948 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 274ms. Found 1 repository interfaces.
+2020-06-11 23:26:39.710  INFO 14948 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-11 23:26:39.712  INFO 14948 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-11 23:26:39.731  INFO 14948 --- [           main]  .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.example.repo.LearnRepo.
+2020-06-11 23:26:39.732  INFO 14948 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+2020-06-11 23:26:40.754  INFO 14948 --- [           main]  trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-11 23:26:41.612  INFO 14948 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-11 23:26:41.629  INFO 14948 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-11 23:26:41.630  INFO 14948 --- [           main]  o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-11 23:26:41.630  INFO 14948 --- [           main]  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-06-11 23:26:41.768  INFO 14948 --- [           main]  o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2020-06-11 23:26:41.769  INFO 14948 --- [           main]  o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5276 ms
+2020-06-11 23:26:42.724  INFO 14948 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-11 23:26:42.848  INFO 14948 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-11 23:26:42.939  INFO 14948 --- [           main]  o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-11 23:26:43.060  INFO 14948 --- [           main]  org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2020-06-11 23:26:43.248  INFO 14948 --- [           main]  o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-11 23:26:43.399  INFO 14948 --- [           main]  org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-06-11 23:26:43.604  WARN 14948 --- [           main]  ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: org.example.entity.Learn
+2020-06-11 23:26:43.605  INFO 14948 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-06-11 23:26:43.614  INFO 14948 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-06-11 23:26:43.643  INFO 14948 --- [           main]  o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-06-11 23:26:43.657  INFO 14948 --- [           main]  ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-11 23:26:43.661 ERROR 14948 --- [           main]  o.s.boot.SpringApplication               : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: org.example.entity.Learn
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1803)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.example.BasewebApplication.main(BasewebApplication.java:9)
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: org.example.entity.Learn
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:781)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:254)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:230)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:273)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:900)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:931)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799)
+	... 16 common frames omitted
+2020-06-11 23:32:57.370  INFO 14800 --- [           main]  org.example.BasewebApplication           : Starting BasewebApplication on Admin with PID 14800 (E:\inteliJ\onthi\target\classes started by Administrator in E:\inteliJ\onthi)
+2020-06-11 23:32:57.372  INFO 14800 --- [           main]  org.example.BasewebApplication           : No active profile set, falling back to default profiles: default
+2020-06-11 23:32:57.641  WARN 14800 --- [kground-preinit]  o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-06-11 23:32:59.242  INFO 14800 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-11 23:32:59.244  INFO 14800 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-11 23:32:59.502  INFO 14800 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 230ms. Found 1 repository interfaces.
+2020-06-11 23:32:59.531  INFO 14800 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-11 23:32:59.533  INFO 14800 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-11 23:32:59.554  INFO 14800 --- [           main]  .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.example.repo.LearnRepo.
+2020-06-11 23:32:59.554  INFO 14800 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+2020-06-11 23:33:00.362  INFO 14800 --- [           main]  trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-11 23:33:01.357  INFO 14800 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-11 23:33:01.401  INFO 14800 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-11 23:33:01.402  INFO 14800 --- [           main]  o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-11 23:33:01.403  INFO 14800 --- [           main]  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-06-11 23:33:01.593  INFO 14800 --- [           main]  o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2020-06-11 23:33:01.593  INFO 14800 --- [           main]  o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4040 ms
+2020-06-11 23:33:02.568  INFO 14800 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-11 23:33:02.711  INFO 14800 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-11 23:33:02.809  INFO 14800 --- [           main]  o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-11 23:33:02.954  INFO 14800 --- [           main]  org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2020-06-11 23:33:03.211  INFO 14800 --- [           main]  o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-11 23:33:03.368  INFO 14800 --- [           main]  org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-06-11 23:33:04.290  INFO 14800 --- [           main]  o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-11 23:33:04.300  INFO 14800 --- [           main]  j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-11 23:33:04.958  WARN 14800 --- [           main]  ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'APIController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serviceImpl': Unsatisfied dependency expressed through field 'learnRepo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'learnRepo': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List org.example.repo.LearnRepo.findByArea(int)! No property area found for type Learn!
+2020-06-11 23:33:04.959  INFO 14800 --- [           main]  j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-11 23:33:04.961  INFO 14800 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-06-11 23:33:04.968  INFO 14800 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-06-11 23:33:04.994  INFO 14800 --- [           main]  o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-06-11 23:33:05.009  INFO 14800 --- [           main]  ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-11 23:33:05.013 ERROR 14800 --- [           main]  o.s.boot.SpringApplication               : Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'APIController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serviceImpl': Unsatisfied dependency expressed through field 'learnRepo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'learnRepo': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List org.example.repo.LearnRepo.findByArea(int)! No property area found for type Learn!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.example.BasewebApplication.main(BasewebApplication.java:9)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serviceImpl': Unsatisfied dependency expressed through field 'learnRepo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'learnRepo': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List org.example.repo.LearnRepo.findByArea(int)! No property area found for type Learn!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:397)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:636)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'learnRepo': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List org.example.repo.LearnRepo.findByArea(int)! No property area found for type Learn!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1803)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:636)
+	... 32 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List org.example.repo.LearnRepo.findByArea(int)! No property area found for type Learn!
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:103)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:106)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:211)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:79)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lookupQuery(RepositoryFactorySupport.java:574)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(RepositoryFactorySupport.java:567)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1051)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.mapMethodsToQuery(RepositoryFactorySupport.java:569)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$new$0(RepositoryFactorySupport.java:559)
+	at java.util.Optional.map(Optional.java:215)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:559)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:332)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:212)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:121)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799)
+	... 42 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property area found for type Learn!
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:382)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:358)
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:311)
+	at java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:324)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:293)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:276)
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:82)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:250)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:251)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:380)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:381)
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:96)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:96)
+	... 68 common frames omitted
+2020-06-11 23:34:55.459  INFO 2920 --- [           main]  org.example.BasewebApplication           : Starting BasewebApplication on Admin with PID 2920 (E:\inteliJ\onthi\target\classes started by Administrator in E:\inteliJ\onthi)
+2020-06-11 23:34:55.462  INFO 2920 --- [           main]  org.example.BasewebApplication           : No active profile set, falling back to default profiles: default
+2020-06-11 23:34:55.671  WARN 2920 --- [kground-preinit]  o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-06-11 23:34:58.002  INFO 2920 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-11 23:34:58.004  INFO 2920 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-11 23:34:58.189  INFO 2920 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 174ms. Found 1 repository interfaces.
+2020-06-11 23:34:58.234  INFO 2920 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-11 23:34:58.236  INFO 2920 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-11 23:34:58.256  INFO 2920 --- [           main]  .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.example.repo.LearnRepo.
+2020-06-11 23:34:58.256  INFO 2920 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
+2020-06-11 23:34:59.132  INFO 2920 --- [           main]  trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-11 23:34:59.791  INFO 2920 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-11 23:34:59.809  INFO 2920 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-11 23:34:59.810  INFO 2920 --- [           main]  o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-11 23:34:59.811  INFO 2920 --- [           main]  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-06-11 23:35:00.037  INFO 2920 --- [           main]  o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2020-06-11 23:35:00.037  INFO 2920 --- [           main]  o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4386 ms
+2020-06-11 23:35:01.214  INFO 2920 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-11 23:35:01.364  INFO 2920 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-11 23:35:01.438  INFO 2920 --- [           main]  o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-11 23:35:01.553  INFO 2920 --- [           main]  org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2020-06-11 23:35:01.777  INFO 2920 --- [           main]  o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-11 23:35:01.933  INFO 2920 --- [           main]  org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-06-11 23:35:02.661  INFO 2920 --- [           main]  o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-11 23:35:02.668  INFO 2920 --- [           main]  j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-11 23:35:03.752  WARN 2920 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-11 23:35:03.753  WARN 2920 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-06-11 23:35:03.753  WARN 2920 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-11 23:35:03.839  WARN 2920 --- [           main]  JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-11 23:35:04.088  INFO 2920 --- [           main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-11 23:35:04.991  INFO 2920 --- [           main]  .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7d76b7e8-7058-4432-b5de-3884afe207e0
+
+2020-06-11 23:35:05.272  INFO 2920 --- [           main]  o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d5c160e, org.springframework.security.web.context.SecurityContextPersistenceFilter@59cde35, org.springframework.security.web.header.HeaderWriterFilter@54d2f5d3, org.springframework.security.web.csrf.CsrfFilter@220be130, org.springframework.security.web.authentication.logout.LogoutFilter@28c7fd9d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5dd6f517, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@342dc040, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@8afce3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4b2acb12, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d3eb1ea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c68e82, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e02f17d, org.springframework.security.web.session.SessionManagementFilter@228958a, org.springframework.security.web.access.ExceptionTranslationFilter@dd07be8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c17794e]
+2020-06-11 23:35:05.488  INFO 2920 --- [           main]  io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-06-11 23:35:05.492  INFO 2920 --- [           main]  io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-06-11 23:35:07.068  WARN 2920 --- [           main]  ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'enableRedisKeyspaceNotificationsInitializer' defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+2020-06-11 23:35:07.076  INFO 2920 --- [           main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-11 23:35:07.080  INFO 2920 --- [           main]  j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-11 23:35:07.086  INFO 2920 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-06-11 23:35:07.100  INFO 2920 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-06-11 23:35:08.236  INFO 2920 --- [           main]  o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-06-11 23:35:08.252  INFO 2920 --- [           main]  ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-11 23:35:08.257 ERROR 2920 --- [           main]  o.s.boot.SpringApplication               : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'enableRedisKeyspaceNotificationsInitializer' defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1803)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.example.BasewebApplication.main(BasewebApplication.java:9)
+Caused by: org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1189)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1168)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:941)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:352)
+	at org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration$EnableRedisKeyspaceNotificationsInitializer.afterPropertiesSet(RedisHttpSessionConfiguration.java:331)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799)
+	... 16 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:234)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:207)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1187)
+	... 22 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:688)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-06-11 23:36:08.582  INFO 4024 --- [           main]  org.example.BasewebApplication           : Starting BasewebApplication on Admin with PID 4024 (E:\inteliJ\onthi\target\classes started by Administrator in E:\inteliJ\onthi)
+2020-06-11 23:36:08.584  INFO 4024 --- [           main]  org.example.BasewebApplication           : No active profile set, falling back to default profiles: default
+2020-06-11 23:36:09.000  WARN 4024 --- [kground-preinit]  o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-06-11 23:36:11.950  INFO 4024 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-11 23:36:11.956  INFO 4024 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-11 23:36:12.348  INFO 4024 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 330ms. Found 1 repository interfaces.
+2020-06-11 23:36:12.379  INFO 4024 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-11 23:36:12.381  INFO 4024 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-11 23:36:12.399  INFO 4024 --- [           main]  .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.example.repo.LearnRepo.
+2020-06-11 23:36:12.400  INFO 4024 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+2020-06-11 23:36:13.744  INFO 4024 --- [           main]  trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-11 23:36:14.732  INFO 4024 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-11 23:36:14.750  INFO 4024 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-11 23:36:14.752  INFO 4024 --- [           main]  o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-11 23:36:14.752  INFO 4024 --- [           main]  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-06-11 23:36:14.981  INFO 4024 --- [           main]  o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2020-06-11 23:36:14.983  INFO 4024 --- [           main]  o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6204 ms
+2020-06-11 23:36:17.136  INFO 4024 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-11 23:36:17.434  INFO 4024 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-11 23:36:17.594  INFO 4024 --- [           main]  o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-11 23:36:17.977  INFO 4024 --- [           main]  org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2020-06-11 23:36:18.309  INFO 4024 --- [           main]  o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-11 23:36:18.635  INFO 4024 --- [           main]  org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-06-11 23:36:19.826  INFO 4024 --- [           main]  o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-11 23:36:19.840  INFO 4024 --- [           main]  j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-11 23:36:22.484  WARN 4024 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-11 23:36:22.488  WARN 4024 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-06-11 23:36:22.488  WARN 4024 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-11 23:36:22.640  WARN 4024 --- [           main]  JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-11 23:36:23.047  INFO 4024 --- [           main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-11 23:36:24.491  INFO 4024 --- [           main]  .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 15f86cd6-9c30-4cdf-b732-4af97046aa7a
+
+2020-06-11 23:36:24.942  INFO 4024 --- [           main]  o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bbb48dd, org.springframework.security.web.context.SecurityContextPersistenceFilter@5ef591af, org.springframework.security.web.header.HeaderWriterFilter@320fc4b0, org.springframework.security.web.csrf.CsrfFilter@1e66bf2d, org.springframework.security.web.authentication.logout.LogoutFilter@446a692f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@52c6e959, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2c6aa46c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@f9de1fd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2e47a71e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71fb1da3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@17e2835c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fef4f96, org.springframework.security.web.session.SessionManagementFilter@25435731, org.springframework.security.web.access.ExceptionTranslationFilter@44de3b46, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6be80629]
+2020-06-11 23:36:25.242  INFO 4024 --- [           main]  io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-06-11 23:36:25.245  INFO 4024 --- [           main]  io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-06-11 23:36:25.851  WARN 4024 --- [           main]  ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'enableRedisKeyspaceNotificationsInitializer' defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: ERR Unsupported CONFIG parameter: notify-keyspace-events
+2020-06-11 23:36:25.852  INFO 4024 --- [           main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-11 23:36:25.854  INFO 4024 --- [           main]  j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-11 23:36:25.856  INFO 4024 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-06-11 23:36:25.864  INFO 4024 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-06-11 23:36:27.020  INFO 4024 --- [           main]  o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-06-11 23:36:27.033  INFO 4024 --- [           main]  ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-11 23:36:27.037 ERROR 4024 --- [           main]  o.s.boot.SpringApplication               : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'enableRedisKeyspaceNotificationsInitializer' defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: ERR Unsupported CONFIG parameter: notify-keyspace-events
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1803)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.example.BasewebApplication.main(BasewebApplication.java:9)
+Caused by: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: ERR Unsupported CONFIG parameter: notify-keyspace-events
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:54)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:52)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:269)
+	at org.springframework.data.redis.connection.lettuce.LettuceServerCommands.convertLettuceAccessException(LettuceServerCommands.java:571)
+	at org.springframework.data.redis.connection.lettuce.LettuceServerCommands.setConfig(LettuceServerCommands.java:332)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.setConfig(DefaultedRedisConnection.java:1326)
+	at org.springframework.session.data.redis.config.ConfigureNotifyKeyspaceEventsAction.configure(ConfigureNotifyKeyspaceEventsAction.java:70)
+	at org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration$EnableRedisKeyspaceNotificationsInitializer.afterPropertiesSet(RedisHttpSessionConfiguration.java:333)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799)
+	... 16 common frames omitted
+Caused by: io.lettuce.core.RedisCommandExecutionException: ERR Unsupported CONFIG parameter: notify-keyspace-events
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:135)
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:108)
+	at io.lettuce.core.protocol.AsyncCommand.completeResult(AsyncCommand.java:120)
+	at io.lettuce.core.protocol.AsyncCommand.complete(AsyncCommand.java:111)
+	at io.lettuce.core.protocol.CommandHandler.complete(CommandHandler.java:652)
+	at io.lettuce.core.protocol.CommandHandler.decode(CommandHandler.java:612)
+	at io.lettuce.core.protocol.CommandHandler.channelRead(CommandHandler.java:563)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-06-11 23:40:08.215  INFO 12844 --- [           main]  org.example.BasewebApplication           : Starting BasewebApplication on Admin with PID 12844 (E:\inteliJ\onthi\target\classes started by Administrator in E:\inteliJ\onthi)
+2020-06-11 23:40:08.216  INFO 12844 --- [           main]  org.example.BasewebApplication           : No active profile set, falling back to default profiles: default
+2020-06-11 23:40:08.426  WARN 12844 --- [kground-preinit]  o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-06-11 23:40:10.530  INFO 12844 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-11 23:40:10.533  INFO 12844 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-11 23:40:10.775  INFO 12844 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 226ms. Found 1 repository interfaces.
+2020-06-11 23:40:10.810  INFO 12844 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-11 23:40:10.812  INFO 12844 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-11 23:40:10.836  INFO 12844 --- [           main]  .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.example.repo.LearnRepo.
+2020-06-11 23:40:10.837  INFO 12844 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2020-06-11 23:40:11.703  INFO 12844 --- [           main]  trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-11 23:40:12.384  INFO 12844 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-11 23:40:12.400  INFO 12844 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-11 23:40:12.401  INFO 12844 --- [           main]  o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-11 23:40:12.401  INFO 12844 --- [           main]  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-06-11 23:40:12.552  INFO 12844 --- [           main]  o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2020-06-11 23:40:12.552  INFO 12844 --- [           main]  o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4139 ms
+2020-06-11 23:40:13.389  INFO 12844 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-11 23:40:13.534  INFO 12844 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-11 23:40:13.614  INFO 12844 --- [           main]  o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-11 23:40:13.735  INFO 12844 --- [           main]  org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2020-06-11 23:40:13.952  INFO 12844 --- [           main]  o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-11 23:40:14.188  INFO 12844 --- [           main]  org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-06-11 23:40:14.916  INFO 12844 --- [           main]  o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-11 23:40:14.924  INFO 12844 --- [           main]  j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-11 23:40:16.400  WARN 12844 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-11 23:40:16.401  WARN 12844 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-06-11 23:40:16.401  WARN 12844 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-11 23:40:16.539  WARN 12844 --- [           main]  JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-11 23:40:16.765  INFO 12844 --- [           main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-11 23:40:17.689  INFO 12844 --- [           main]  .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7b07545f-c796-438d-b577-3e30bba24a62
+
+2020-06-11 23:40:17.963  INFO 12844 --- [           main]  o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8afce3, org.springframework.security.web.context.SecurityContextPersistenceFilter@59cde35, org.springframework.security.web.header.HeaderWriterFilter@54d2f5d3, org.springframework.security.web.csrf.CsrfFilter@220be130, org.springframework.security.web.authentication.logout.LogoutFilter@28c7fd9d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e01b195, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@342dc040, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4e02f17d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@455d04d2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d3eb1ea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c68e82, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@675230cd, org.springframework.security.web.session.SessionManagementFilter@228958a, org.springframework.security.web.access.ExceptionTranslationFilter@dd07be8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@414d2821]
+2020-06-11 23:40:18.127  INFO 12844 --- [           main]  io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-06-11 23:40:18.128  INFO 12844 --- [           main]  io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-06-11 23:40:18.519  WARN 12844 --- [           main]  ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'enableRedisKeyspaceNotificationsInitializer' defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: ERR Unsupported CONFIG parameter: notify-keyspace-events
+2020-06-11 23:40:18.521  INFO 12844 --- [           main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-11 23:40:18.523  INFO 12844 --- [           main]  j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-11 23:40:18.525  INFO 12844 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-06-11 23:40:18.534  INFO 12844 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-06-11 23:40:19.665  INFO 12844 --- [           main]  o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-06-11 23:40:19.680  INFO 12844 --- [           main]  ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-11 23:40:19.686 ERROR 12844 --- [           main]  o.s.boot.SpringApplication               : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'enableRedisKeyspaceNotificationsInitializer' defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: ERR Unsupported CONFIG parameter: notify-keyspace-events
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1803)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.example.BasewebApplication.main(BasewebApplication.java:9)
+Caused by: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: ERR Unsupported CONFIG parameter: notify-keyspace-events
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:54)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:52)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:269)
+	at org.springframework.data.redis.connection.lettuce.LettuceServerCommands.convertLettuceAccessException(LettuceServerCommands.java:571)
+	at org.springframework.data.redis.connection.lettuce.LettuceServerCommands.setConfig(LettuceServerCommands.java:332)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.setConfig(DefaultedRedisConnection.java:1326)
+	at org.springframework.session.data.redis.config.ConfigureNotifyKeyspaceEventsAction.configure(ConfigureNotifyKeyspaceEventsAction.java:70)
+	at org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration$EnableRedisKeyspaceNotificationsInitializer.afterPropertiesSet(RedisHttpSessionConfiguration.java:333)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799)
+	... 16 common frames omitted
+Caused by: io.lettuce.core.RedisCommandExecutionException: ERR Unsupported CONFIG parameter: notify-keyspace-events
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:135)
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:108)
+	at io.lettuce.core.protocol.AsyncCommand.completeResult(AsyncCommand.java:120)
+	at io.lettuce.core.protocol.AsyncCommand.complete(AsyncCommand.java:111)
+	at io.lettuce.core.protocol.CommandHandler.complete(CommandHandler.java:652)
+	at io.lettuce.core.protocol.CommandHandler.decode(CommandHandler.java:612)
+	at io.lettuce.core.protocol.CommandHandler.channelRead(CommandHandler.java:563)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-06-11 23:43:00.930  INFO 10468 --- [           main]  org.example.BasewebApplication           : Starting BasewebApplication on Admin with PID 10468 (E:\inteliJ\onthi\target\classes started by Administrator in E:\inteliJ\onthi)
+2020-06-11 23:43:00.933  INFO 10468 --- [           main]  org.example.BasewebApplication           : No active profile set, falling back to default profiles: default
+2020-06-11 23:43:01.477  WARN 10468 --- [kground-preinit]  o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-06-11 23:43:03.880  INFO 10468 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-11 23:43:03.884  INFO 10468 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-11 23:43:04.308  INFO 10468 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 406ms. Found 1 repository interfaces.
+2020-06-11 23:43:04.344  INFO 10468 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-06-11 23:43:04.346  INFO 10468 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-11 23:43:04.377  INFO 10468 --- [           main]  .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.example.repo.LearnRepo.
+2020-06-11 23:43:04.378  INFO 10468 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2020-06-11 23:43:05.718  INFO 10468 --- [           main]  trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-11 23:43:06.868  INFO 10468 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-11 23:43:06.885  INFO 10468 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-11 23:43:06.886  INFO 10468 --- [           main]  o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-11 23:43:06.887  INFO 10468 --- [           main]  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-06-11 23:43:07.081  INFO 10468 --- [           main]  o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2020-06-11 23:43:07.082  INFO 10468 --- [           main]  o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5838 ms
+2020-06-11 23:43:08.403  INFO 10468 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-11 23:43:08.560  INFO 10468 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-11 23:43:08.671  INFO 10468 --- [           main]  o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-11 23:43:08.816  INFO 10468 --- [           main]  org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2020-06-11 23:43:09.312  INFO 10468 --- [           main]  o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-11 23:43:09.587  INFO 10468 --- [           main]  org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-06-11 23:43:10.617  INFO 10468 --- [           main]  o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-11 23:43:10.629  INFO 10468 --- [           main]  j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-11 23:43:12.466  WARN 10468 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-11 23:43:12.467  WARN 10468 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-06-11 23:43:12.467  WARN 10468 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-11 23:43:12.591  WARN 10468 --- [           main]  JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-11 23:43:12.916  INFO 10468 --- [           main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-11 23:43:14.061  INFO 10468 --- [           main]  .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 666751af-4097-4cde-8fbb-f5b4b42f7831
+
+2020-06-11 23:43:14.564  INFO 10468 --- [           main]  o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@de63949, org.springframework.security.web.context.SecurityContextPersistenceFilter@76104df5, org.springframework.security.web.header.HeaderWriterFilter@a251135, org.springframework.security.web.csrf.CsrfFilter@71fb1da3, org.springframework.security.web.authentication.logout.LogoutFilter@49ea13b6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6f7b8ae1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6bf28f61, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5c5c784c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@361b3ca6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f9e8af5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b0494a8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a299b9d, org.springframework.security.web.session.SessionManagementFilter@446a692f, org.springframework.security.web.access.ExceptionTranslationFilter@20c283b4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c871ce4]
+2020-06-11 23:43:14.810  INFO 10468 --- [           main]  io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2020-06-11 23:43:14.813  INFO 10468 --- [           main]  io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2020-06-11 23:43:15.553  WARN 10468 --- [           main]  ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'enableRedisKeyspaceNotificationsInitializer' defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: ERR Unsupported CONFIG parameter: notify-keyspace-events
+2020-06-11 23:43:15.555  INFO 10468 --- [           main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-11 23:43:15.557  INFO 10468 --- [           main]  j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-11 23:43:15.560  INFO 10468 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-06-11 23:43:15.580  INFO 10468 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-06-11 23:43:16.754  INFO 10468 --- [           main]  o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-06-11 23:43:16.768  INFO 10468 --- [           main]  ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-06-11 23:43:16.773 ERROR 10468 --- [           main]  o.s.boot.SpringApplication               : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'enableRedisKeyspaceNotificationsInitializer' defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: ERR Unsupported CONFIG parameter: notify-keyspace-events
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1803)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.example.BasewebApplication.main(BasewebApplication.java:9)
+Caused by: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: ERR Unsupported CONFIG parameter: notify-keyspace-events
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:54)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:52)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:269)
+	at org.springframework.data.redis.connection.lettuce.LettuceServerCommands.convertLettuceAccessException(LettuceServerCommands.java:571)
+	at org.springframework.data.redis.connection.lettuce.LettuceServerCommands.setConfig(LettuceServerCommands.java:332)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.setConfig(DefaultedRedisConnection.java:1326)
+	at org.springframework.session.data.redis.config.ConfigureNotifyKeyspaceEventsAction.configure(ConfigureNotifyKeyspaceEventsAction.java:70)
+	at org.springframework.session.data.redis.config.annotation.web.http.RedisHttpSessionConfiguration$EnableRedisKeyspaceNotificationsInitializer.afterPropertiesSet(RedisHttpSessionConfiguration.java:333)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799)
+	... 16 common frames omitted
+Caused by: io.lettuce.core.RedisCommandExecutionException: ERR Unsupported CONFIG parameter: notify-keyspace-events
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:135)
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:108)
+	at io.lettuce.core.protocol.AsyncCommand.completeResult(AsyncCommand.java:120)
+	at io.lettuce.core.protocol.AsyncCommand.complete(AsyncCommand.java:111)
+	at io.lettuce.core.protocol.CommandHandler.complete(CommandHandler.java:652)
+	at io.lettuce.core.protocol.CommandHandler.decode(CommandHandler.java:612)
+	at io.lettuce.core.protocol.CommandHandler.channelRead(CommandHandler.java:563)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-06-11 23:43:55.108  INFO 1908 --- [           main]  org.example.BasewebApplication           : Starting BasewebApplication on Admin with PID 1908 (E:\inteliJ\onthi\target\classes started by Administrator in E:\inteliJ\onthi)
+2020-06-11 23:43:55.111  INFO 1908 --- [           main]  org.example.BasewebApplication           : No active profile set, falling back to default profiles: default
+2020-06-11 23:43:55.654  WARN 1908 --- [kground-preinit]  o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-06-11 23:43:58.226  INFO 1908 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-11 23:43:58.330  INFO 1908 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84ms. Found 1 repository interfaces.
+2020-06-11 23:43:59.264  INFO 1908 --- [           main]  trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-11 23:44:00.059  INFO 1908 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-11 23:44:00.166  INFO 1908 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-11 23:44:00.167  INFO 1908 --- [           main]  o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-11 23:44:00.168  INFO 1908 --- [           main]  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-06-11 23:44:00.362  INFO 1908 --- [           main]  o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2020-06-11 23:44:00.363  INFO 1908 --- [           main]  o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4888 ms
+2020-06-11 23:44:00.962  INFO 1908 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-11 23:44:01.333  INFO 1908 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-11 23:44:01.557  INFO 1908 --- [           main]  o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-11 23:44:01.764  INFO 1908 --- [           main]  org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2020-06-11 23:44:01.982  INFO 1908 --- [           main]  o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-11 23:44:02.211  INFO 1908 --- [           main]  org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-06-11 23:44:03.177  INFO 1908 --- [           main]  o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-11 23:44:03.189  INFO 1908 --- [           main]  j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-11 23:44:04.629  WARN 1908 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-11 23:44:04.631  WARN 1908 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-06-11 23:44:04.631  WARN 1908 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-11 23:44:04.807  WARN 1908 --- [           main]  JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-11 23:44:05.168  INFO 1908 --- [           main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-11 23:44:06.788  INFO 1908 --- [           main]  .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b5b0b1d6-9526-4749-bda6-f2ce9d651b12
+
+2020-06-11 23:44:07.125  INFO 1908 --- [           main]  o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@511d5e6e, org.springframework.security.web.context.SecurityContextPersistenceFilter@1115be8c, org.springframework.security.web.header.HeaderWriterFilter@4ca5cb99, org.springframework.security.web.csrf.CsrfFilter@70592729, org.springframework.security.web.authentication.logout.LogoutFilter@5dacf18d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3dded90a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@14239223, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7a78d380, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1607d391, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1dfcf85a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7dddfc35, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e1291a4, org.springframework.security.web.session.SessionManagementFilter@6282f1eb, org.springframework.security.web.access.ExceptionTranslationFilter@11d1735e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d664323]
+2020-06-11 23:44:07.255  INFO 1908 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+2020-06-11 23:44:07.319  INFO 1908 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2020-06-11 23:44:07.322  INFO 1908 --- [           main]  org.example.BasewebApplication           : Started BasewebApplication in 13.442 seconds (JVM running for 14.34)
+2020-06-11 23:45:38.039  INFO 1908 --- [nio-8080-exec-1]  o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-11 23:45:38.039  INFO 1908 --- [nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-11 23:45:38.074  INFO 1908 --- [nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
+2020-06-11 23:45:38.099 ERROR 1908 --- [nio-8080-exec-1]  o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/api] threw exception
+org.springframework.security.web.firewall.RequestRejectedException: The request was rejected because the URL contained a potentially malicious String "//"
+	at org.springframework.security.web.firewall.StrictHttpFirewall.rejectedBlacklistedUrls(StrictHttpFirewall.java:369)
+	at org.springframework.security.web.firewall.StrictHttpFirewall.getFirewalledRequest(StrictHttpFirewall.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:194)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1579)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-06-11 23:47:30.523  INFO 856 --- [           main]  org.example.BasewebApplication           : Starting BasewebApplication on Admin with PID 856 (E:\inteliJ\onthi\target\classes started by Administrator in E:\inteliJ\onthi)
+2020-06-11 23:47:30.525  INFO 856 --- [           main]  org.example.BasewebApplication           : No active profile set, falling back to default profiles: default
+2020-06-11 23:47:30.845  WARN 856 --- [kground-preinit]  o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-06-11 23:47:33.013  INFO 856 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-11 23:47:33.125  INFO 856 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92ms. Found 1 repository interfaces.
+2020-06-11 23:47:33.847  INFO 856 --- [           main]  trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-11 23:47:34.503  INFO 856 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-11 23:47:34.521  INFO 856 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-11 23:47:34.522  INFO 856 --- [           main]  o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-11 23:47:34.522  INFO 856 --- [           main]  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-06-11 23:47:34.766  INFO 856 --- [           main]  o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2020-06-11 23:47:34.767  INFO 856 --- [           main]  o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4019 ms
+2020-06-11 23:47:35.094  INFO 856 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-11 23:47:35.292  INFO 856 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-11 23:47:35.376  INFO 856 --- [           main]  o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-11 23:47:35.567  INFO 856 --- [           main]  org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2020-06-11 23:47:35.907  INFO 856 --- [           main]  o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-11 23:47:36.135  INFO 856 --- [           main]  org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-06-11 23:47:37.107  INFO 856 --- [           main]  o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-11 23:47:37.115  INFO 856 --- [           main]  j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-11 23:47:38.115  WARN 856 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-11 23:47:38.115  WARN 856 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-06-11 23:47:38.116  WARN 856 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-11 23:47:38.222  WARN 856 --- [           main]  JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-11 23:47:38.417  INFO 856 --- [           main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-11 23:47:39.240  INFO 856 --- [           main]  .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: cc3da5b9-42aa-4835-8e81-327cc7c7fd8a
+
+2020-06-11 23:47:39.514  INFO 856 --- [           main]  o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a48c398, org.springframework.security.web.context.SecurityContextPersistenceFilter@6fe2a366, org.springframework.security.web.header.HeaderWriterFilter@43b172e3, org.springframework.security.web.csrf.CsrfFilter@43fe2008, org.springframework.security.web.authentication.logout.LogoutFilter@13b29b34, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6f65aa58, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4ca5cb99, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1b4ba615, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2676d96a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@99c3cee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b61e97, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4407b042, org.springframework.security.web.session.SessionManagementFilter@304068, org.springframework.security.web.access.ExceptionTranslationFilter@70592729, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1dcca426]
+2020-06-11 23:47:39.593  INFO 856 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+2020-06-11 23:47:39.622  INFO 856 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2020-06-11 23:47:39.625  INFO 856 --- [           main]  org.example.BasewebApplication           : Started BasewebApplication in 10.228 seconds (JVM running for 11.068)
+2020-06-11 23:48:03.709  INFO 856 --- [nio-8080-exec-2]  o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-11 23:48:03.710  INFO 856 --- [nio-8080-exec-2]  o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-11 23:48:03.758  INFO 856 --- [nio-8080-exec-2]  o.s.web.servlet.DispatcherServlet        : Completed initialization in 48 ms
+2020-06-11 23:50:24.197  INFO 10188 --- [           main]  org.example.BasewebApplication           : Starting BasewebApplication on Admin with PID 10188 (E:\inteliJ\onthi\target\classes started by Administrator in E:\inteliJ\onthi)
+2020-06-11 23:50:24.200  INFO 10188 --- [           main]  org.example.BasewebApplication           : No active profile set, falling back to default profiles: default
+2020-06-11 23:50:24.563  WARN 10188 --- [kground-preinit]  o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-06-11 23:50:27.354  INFO 10188 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-11 23:50:27.475  INFO 10188 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98ms. Found 1 repository interfaces.
+2020-06-11 23:50:28.459  INFO 10188 --- [           main]  trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-11 23:50:29.523  INFO 10188 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-11 23:50:29.653  INFO 10188 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-11 23:50:29.654  INFO 10188 --- [           main]  o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-11 23:50:29.655  INFO 10188 --- [           main]  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-06-11 23:50:29.891  INFO 10188 --- [           main]  o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2020-06-11 23:50:29.892  INFO 10188 --- [           main]  o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5398 ms
+2020-06-11 23:50:30.416  INFO 10188 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-11 23:50:30.851  INFO 10188 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-11 23:50:31.356  INFO 10188 --- [           main]  o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-11 23:50:31.854  INFO 10188 --- [           main]  org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2020-06-11 23:50:32.174  INFO 10188 --- [           main]  o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-11 23:50:32.465  INFO 10188 --- [           main]  org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-06-11 23:50:34.053  INFO 10188 --- [           main]  o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-11 23:50:34.070  INFO 10188 --- [           main]  j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-11 23:50:37.636  WARN 10188 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-11 23:50:37.637  WARN 10188 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-06-11 23:50:37.637  WARN 10188 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-11 23:50:37.918  WARN 10188 --- [           main]  JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-11 23:50:38.537  INFO 10188 --- [           main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-11 23:50:40.506  INFO 10188 --- [           main]  .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 50c93599-06c7-43f7-9cf2-576ce2fb5c16
+
+2020-06-11 23:50:41.212  INFO 10188 --- [           main]  o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4377ed24, org.springframework.security.web.context.SecurityContextPersistenceFilter@6cc56b32, org.springframework.security.web.header.HeaderWriterFilter@56f2c9e8, org.springframework.security.web.csrf.CsrfFilter@5855b0ed, org.springframework.security.web.authentication.logout.LogoutFilter@54d60fa1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7b2e931, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4ab9d160, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7a30e30b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@28b5d5dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@552bee2f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3de45b6c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1dcca426, org.springframework.security.web.session.SessionManagementFilter@350342e0, org.springframework.security.web.access.ExceptionTranslationFilter@8ef1d58, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@156ff70f]
+2020-06-11 23:50:41.371  INFO 10188 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+2020-06-11 23:50:41.414  INFO 10188 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2020-06-11 23:50:41.418  INFO 10188 --- [           main]  org.example.BasewebApplication           : Started BasewebApplication in 18.403 seconds (JVM running for 19.108)
+2020-06-11 23:51:09.244  INFO 10188 --- [nio-8080-exec-1]  o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-11 23:51:09.245  INFO 10188 --- [nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-11 23:51:09.446  INFO 10188 --- [nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet        : Completed initialization in 200 ms
+2020-06-11 23:57:01.662  INFO 13140 --- [           main]  org.example.BasewebApplication           : Starting BasewebApplication on Admin with PID 13140 (E:\inteliJ\onthi\target\classes started by Administrator in E:\inteliJ\onthi)
+2020-06-11 23:57:01.664  INFO 13140 --- [           main]  org.example.BasewebApplication           : No active profile set, falling back to default profiles: default
+2020-06-11 23:57:01.832  WARN 13140 --- [kground-preinit]  o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-06-11 23:57:04.153  INFO 13140 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-11 23:57:04.257  INFO 13140 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83ms. Found 1 repository interfaces.
+2020-06-11 23:57:05.003  INFO 13140 --- [           main]  trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-11 23:57:05.849  INFO 13140 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-11 23:57:05.866  INFO 13140 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-11 23:57:05.867  INFO 13140 --- [           main]  o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-11 23:57:05.868  INFO 13140 --- [           main]  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-06-11 23:57:06.255  INFO 13140 --- [           main]  o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2020-06-11 23:57:06.256  INFO 13140 --- [           main]  o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4330 ms
+2020-06-11 23:57:06.627  INFO 13140 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-11 23:57:06.745  INFO 13140 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-11 23:57:06.817  INFO 13140 --- [           main]  o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-11 23:57:06.942  INFO 13140 --- [           main]  org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2020-06-11 23:57:07.305  INFO 13140 --- [           main]  o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-11 23:57:07.487  INFO 13140 --- [           main]  org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-06-11 23:57:08.291  INFO 13140 --- [           main]  o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-11 23:57:08.300  INFO 13140 --- [           main]  j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-11 23:57:09.261  WARN 13140 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-11 23:57:09.261  WARN 13140 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-06-11 23:57:09.262  WARN 13140 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-11 23:57:09.376  WARN 13140 --- [           main]  JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-11 23:57:09.604  INFO 13140 --- [           main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-11 23:57:10.651  INFO 13140 --- [           main]  .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: dc1052fa-f30e-4166-9b22-874573b75fee
+
+2020-06-11 23:57:10.957  INFO 13140 --- [           main]  o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30e2016a, org.springframework.security.web.context.SecurityContextPersistenceFilter@c5a2d5, org.springframework.security.web.header.HeaderWriterFilter@47c81e89, org.springframework.security.web.csrf.CsrfFilter@68df8c6, org.springframework.security.web.authentication.logout.LogoutFilter@7a30e30b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@326706d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@f08d676, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@75f32817, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@12608986, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e4d4d22, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e89eba7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23a78c77, org.springframework.security.web.session.SessionManagementFilter@563ada5, org.springframework.security.web.access.ExceptionTranslationFilter@46d148bd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@13374ca6]
+2020-06-11 23:57:11.224  INFO 13140 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+2020-06-11 23:57:11.258  INFO 13140 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2020-06-11 23:57:11.261  INFO 13140 --- [           main]  org.example.BasewebApplication           : Started BasewebApplication in 10.945 seconds (JVM running for 11.696)
+2020-06-11 23:57:19.006  INFO 13140 --- [nio-8080-exec-1]  o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-11 23:57:19.006  INFO 13140 --- [nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-11 23:57:19.057  INFO 13140 --- [nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet        : Completed initialization in 51 ms

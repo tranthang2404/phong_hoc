@@ -1,0 +1,36 @@
+2020-06-12 00:02:51.522  INFO 13412 --- [           main]  org.example.BasewebApplication           : Starting BasewebApplication on Admin with PID 13412 (E:\inteliJ\onthi\target\classes started by Administrator in E:\inteliJ\onthi)
+2020-06-12 00:02:51.529  INFO 13412 --- [           main]  org.example.BasewebApplication           : No active profile set, falling back to default profiles: default
+2020-06-12 00:02:52.151  WARN 13412 --- [kground-preinit]  o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-06-12 00:02:54.239  INFO 13412 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-12 00:02:54.364  INFO 13412 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107ms. Found 1 repository interfaces.
+2020-06-12 00:02:55.045  INFO 13412 --- [           main]  trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-12 00:02:55.776  INFO 13412 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-06-12 00:02:55.792  INFO 13412 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-12 00:02:55.793  INFO 13412 --- [           main]  o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-12 00:02:55.794  INFO 13412 --- [           main]  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-06-12 00:02:56.123  INFO 13412 --- [           main]  o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2020-06-12 00:02:56.124  INFO 13412 --- [           main]  o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4411 ms
+2020-06-12 00:02:56.572  INFO 13412 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-12 00:02:56.706  INFO 13412 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-12 00:02:56.817  INFO 13412 --- [           main]  o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-12 00:02:56.969  INFO 13412 --- [           main]  org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.6.Final}
+2020-06-12 00:02:57.231  INFO 13412 --- [           main]  o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-12 00:02:57.408  INFO 13412 --- [           main]  org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-06-12 00:02:58.091  INFO 13412 --- [           main]  o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-12 00:02:58.099  INFO 13412 --- [           main]  j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-12 00:02:59.116  WARN 13412 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-12 00:02:59.117  WARN 13412 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2020-06-12 00:02:59.117  WARN 13412 --- [           main]  o.s.d.rest.webmvc.halbrowser.HalBrowser  : ---
+2020-06-12 00:02:59.204  WARN 13412 --- [           main]  JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-12 00:02:59.453  INFO 13412 --- [           main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-12 00:03:00.404  INFO 13412 --- [           main]  .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8026c44a-fb66-4874-abaf-6da55fcf350d
+
+2020-06-12 00:03:00.869  INFO 13412 --- [           main]  o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@690ed13a, org.springframework.security.web.context.SecurityContextPersistenceFilter@77204651, org.springframework.security.web.header.HeaderWriterFilter@92fd091, org.springframework.security.web.csrf.CsrfFilter@3578a45b, org.springframework.security.web.authentication.logout.LogoutFilter@1fc3df43, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@151a6598, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2619cb76, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@681311a7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@c5a2d5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a9c11fb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58f50dd0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c7375da, org.springframework.security.web.session.SessionManagementFilter@70439c3, org.springframework.security.web.access.ExceptionTranslationFilter@35fb3209, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3593e074]
+2020-06-12 00:03:01.000  INFO 13412 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+2020-06-12 00:03:01.072  INFO 13412 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/api'
+2020-06-12 00:03:01.077  INFO 13412 --- [           main]  org.example.BasewebApplication           : Started BasewebApplication in 10.93 seconds (JVM running for 11.716)
+2020-06-12 00:03:07.043  INFO 13412 --- [nio-8080-exec-1]  o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-12 00:03:07.044  INFO 13412 --- [nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-12 00:03:07.080  INFO 13412 --- [nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet        : Completed initialization in 36 ms
