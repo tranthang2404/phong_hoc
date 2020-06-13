@@ -23,9 +23,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class APIController {
 	@Autowired
     private ServiceLearn service;
-
+    static long count = 0;
     @PostMapping("/learn")
 	 public ResponseEntity<?> testSpringBoot( @RequestBody ModelInput input) {
+		 	count ++;
 			LocalDate date = LocalDate.now();
 			DayOfWeek dow = date.getDayOfWeek();
 			int day = (dow.getValue()+1) % 7;
@@ -40,7 +41,7 @@ public class APIController {
 				part = 2;
 			}
  		 	List<Learn> lst = service.findByAreaAndDayAndPart(input.getArea(), day , part);
-			System.out.println("create list done : partArea = " + input.getArea());
+			System.out.println("create list done : partArea=" + input.getArea() + " numCallAPI=" +count);
 
 	        return ResponseEntity.ok().body(lst);
 	   }
