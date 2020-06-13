@@ -1,1 +1,1 @@
-web: java -jar build/libs/1.0-SNAPSHOT.jar
+web: java -jar out/artifacts/onthi_jar/onthi.jar
