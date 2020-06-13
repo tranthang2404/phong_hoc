@@ -28,6 +28,10 @@ public class APIController {
 	 public ResponseEntity<?> testSpringBoot( @RequestBody ModelInput input) {
 			LocalDate date = LocalDate.now();
 			DayOfWeek dow = date.getDayOfWeek();
+			int day = (dow.getValue()+1) % 7;
+			if(day == 7 || day == 1) {
+				day = 6;
+			}
 			int hour = LocalTime.now().getHour();
 			int part = 1;
 			if ( hour < 12) {
@@ -35,7 +39,7 @@ public class APIController {
 			} else {
 				part = 2;
 			}
- 		 	List<Learn> lst = service.findByAreaAndDayAndPart(input.getArea(),(dow.getValue()) % 7 ,part);
+ 		 	List<Learn> lst = service.findByAreaAndDayAndPart(input.getArea(), day , part);
 			System.out.println("create list done : partArea = " + input.getArea());
 
 	        return ResponseEntity.ok().body(lst);
