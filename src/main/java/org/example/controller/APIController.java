@@ -29,7 +29,7 @@ public class APIController {
 			LocalDate date = LocalDate.now();
 			DayOfWeek dow = date.getDayOfWeek();
 			int day = (dow.getValue()+1) % 7;
-			if(day == 7 || day == 1) {
+			if(day == 0 || day == 1) {
 				day = 6;
 			}
 			int hour = LocalTime.now().getHour();
