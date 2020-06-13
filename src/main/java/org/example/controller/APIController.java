@@ -35,7 +35,7 @@ public class APIController {
 			} else {
 				part = 2;
 			}
- 		 	List<Learn> lst = service.findByAreaAndDayAndPart(input.getArea(),(dow.getValue()+1) % 7 ,part);
+ 		 	List<Learn> lst = service.findByAreaAndDayAndPart(input.getArea(),(dow.getValue()) % 7 ,part);
 			System.out.println("create list done : partArea = " + input.getArea());
 
 	        return ResponseEntity.ok().body(lst);
