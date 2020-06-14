@@ -41,7 +41,7 @@ public class APIController {
 				part = 2;
 			}
  		 	List<Learn> lst = service.findByAreaAndDayAndPart(input.getArea(), day , part);
-			System.out.println("create list done : partArea=" + input.getArea()+ " body "+ input.getArea()
+			System.out.println("create list done : hour=" + hour+ " body="+ input.getArea()
 					   +"-" + day + "-" + part + " size response="+ lst.size()+ " numCallAPI=" +count);
 
 	        return ResponseEntity.ok().body(lst);
