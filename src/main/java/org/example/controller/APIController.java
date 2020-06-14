@@ -33,7 +33,7 @@ public class APIController {
 			if(day == 0 || day == 1) {
 				day = 2;
 			}
-			int hour = LocalTime.now().getHour();
+			int hour = (LocalTime.now().getHour() + 7) % 24;
 			int part = 1;
 			if ( hour < 12) {
 				part = 1;
